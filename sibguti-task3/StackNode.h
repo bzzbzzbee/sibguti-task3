@@ -37,10 +37,10 @@ inline const T& StackNode<T>::peek()
 template<typename T>
 inline bool StackNode<T>::isEmpty()
 {
-	return (!_tail.getSize());
+	return (!_tail->getSize());
 }
 
 template<typename T>
-inline StackNode<T>::StackNode() : _tail(new List<T>) 
+inline StackNode<T>::StackNode() : _tail(new List<T>)
 {
-}
+};
